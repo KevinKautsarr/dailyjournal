@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 11 Jan 2025 pada 14.31
+-- Waktu pembuatan: 11 Jan 2025 pada 15.13
 -- Versi server: 10.4.32-MariaDB
 -- Versi PHP: 8.2.12
 
@@ -41,12 +41,12 @@ CREATE TABLE `article` (
 --
 
 INSERT INTO `article` (`id`, `judul`, `isi`, `gambar`, `tanggal`, `username`) VALUES
-(1, 'Perpustakaan Kampus', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua', 'perpustakaankampus.jpg', '2024-12-18 21:39:55', 'admin'),
-(2, 'Ruang Kelas', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua', 'ruangkelas.jpg', '2024-12-18 21:39:55', 'admin'),
-(3, 'Kelompok Belajar', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua', 'kelompok.jpg', '2024-12-18 21:46:13', 'admin'),
-(4, 'Auditorium', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua', 'auditorium.jpg', '2024-12-18 21:46:13', 'admin'),
-(5, 'Taman', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua', 'taman.jpg', '2024-12-18 21:46:13', 'admin'),
-(6, 'Ruang Lab', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua', 'ruanglab.jpg', '2024-12-18 21:46:13', 'admin');
+(1, 'Perpustakaan Kampus', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua', 'perpustakaankampus.jpeg', '2024-12-18 21:39:55', 'admin'),
+(2, 'Ruang Kelas', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua', 'ruangkelas.jpeg', '2024-12-18 21:39:55', 'admin'),
+(3, 'Kelompok Belajar', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua', 'kelompok.jpeg', '2024-12-18 21:46:13', 'admin'),
+(4, 'Auditorium', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua', 'auditorium.jpeg', '2024-12-18 21:46:13', 'admin'),
+(5, 'Taman', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua', 'taman.jpeg', '2024-12-18 21:46:13', 'admin'),
+(6, 'Ruang Lab', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua', 'ruanglab.jpeg', '2024-12-18 21:46:13', 'admin');
 
 -- --------------------------------------------------------
 
@@ -68,11 +68,11 @@ CREATE TABLE `gallery` (
 INSERT INTO `gallery` (`id_img`, `gambar`, `tanggal`, `username`) VALUES
 (4, '999.jpg', '2025-01-11 20:18:40', 'kevin'),
 (5, '111.jpg', '2025-01-11 20:18:40', 'kevin'),
-(6, 'perpustakaankampus.jpg', '2025-01-11 20:19:33', 'kevin'),
-(7, 'taman.jpg', '2025-01-11 20:20:05', 'kevin'),
-(8, 'ruanglab.jpg', '2025-01-11 20:20:25', 'kevin'),
-(9, 'kelompok.jpg', '2025-01-11 20:21:26', 'kevin'),
-(10, 'auditorium.jpg', '2025-01-11 20:22:02', 'kevin');
+(6, 'perpustakaankampus.jpeg', '2025-01-11 20:19:33', 'kevin'),
+(7, 'taman.jpeg', '2025-01-11 20:20:05', 'kevin'),
+(8, 'ruanglab.jpeg', '2025-01-11 20:20:25', 'kevin'),
+(9, 'kelompok.jpeg', '2025-01-11 20:21:26', 'kevin'),
+(10, 'auditorium.jpeg', '2025-01-11 20:22:02', 'kevin');
 
 -- --------------------------------------------------------
 
