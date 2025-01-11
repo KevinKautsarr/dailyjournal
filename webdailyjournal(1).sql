@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 07 Jan 2025 pada 03.31
+-- Waktu pembuatan: 11 Jan 2025 pada 14.31
 -- Versi server: 10.4.32-MariaDB
 -- Versi PHP: 8.2.12
 
@@ -51,6 +51,32 @@ INSERT INTO `article` (`id`, `judul`, `isi`, `gambar`, `tanggal`, `username`) VA
 -- --------------------------------------------------------
 
 --
+-- Struktur dari tabel `gallery`
+--
+
+CREATE TABLE `gallery` (
+  `id_img` int(11) NOT NULL,
+  `gambar` text DEFAULT NULL,
+  `tanggal` datetime DEFAULT NULL,
+  `username` varchar(50) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+
+--
+-- Dumping data untuk tabel `gallery`
+--
+
+INSERT INTO `gallery` (`id_img`, `gambar`, `tanggal`, `username`) VALUES
+(4, '999.jpg', '2025-01-11 20:18:40', 'kevin'),
+(5, '111.jpg', '2025-01-11 20:18:40', 'kevin'),
+(6, 'perpustakaankampus.jpg', '2025-01-11 20:19:33', 'kevin'),
+(7, 'taman.jpg', '2025-01-11 20:20:05', 'kevin'),
+(8, 'ruanglab.jpg', '2025-01-11 20:20:25', 'kevin'),
+(9, 'kelompok.jpg', '2025-01-11 20:21:26', 'kevin'),
+(10, 'auditorium.jpg', '2025-01-11 20:22:02', 'kevin');
+
+-- --------------------------------------------------------
+
+--
 -- Struktur dari tabel `user`
 --
 
@@ -66,7 +92,8 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id`, `username`, `password`, `foto`) VALUES
-(1, 'admin', 'e10adc3949ba59abbe56e057f20f883e', '');
+(1, 'admin', 'e10adc3949ba59abbe56e057f20f883e', ''),
+(2, 'kevin', '25d55ad283aa400af464c76d713c07ad', '20250111201720.jpg');
 
 --
 -- Indexes for dumped tables
@@ -77,6 +104,12 @@ INSERT INTO `user` (`id`, `username`, `password`, `foto`) VALUES
 --
 ALTER TABLE `article`
   ADD PRIMARY KEY (`id`);
+
+--
+-- Indeks untuk tabel `gallery`
+--
+ALTER TABLE `gallery`
+  ADD PRIMARY KEY (`id_img`);
 
 --
 -- Indeks untuk tabel `user`
@@ -92,13 +125,19 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT untuk tabel `article`
 --
 ALTER TABLE `article`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+
+--
+-- AUTO_INCREMENT untuk tabel `gallery`
+--
+ALTER TABLE `gallery`
+  MODIFY `id_img` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT untuk tabel `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
